@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Seven Siege's</title>
+    <link rel="stylesheet" href="Css/stylepreorder.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+                <img class="photomenu" src="../PROJECTHCI/Assets/menu btn1000px.png" alt="">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="home.html">Home</a>
+                <a href="quarantine.html">Quarantine</a>
+                <a href="operators.html">Operators</a>
+                <a href="maps.html">Maps</a>
+                <a href="preorder.html">Pre-Order</a>
+            </div>
+        </div>
+        <div class="logo-r7s">
+            <img class="r7s" src="../PROJECTHCI/Assets/rainbow7siege.png" alt="" />
+        </div>
+        <div class="logo-ubipost">
+            <img class="ubipost" src="../PROJECTHCI/Assets/ubipost1000px.png" alt="">
+        </div>
+    </header>
+    <div class="containerall"></div>
+    <div class="containerform">
+        <form action="">
+            <div>
+                <h1 id="preordertxt">Pre-Order</h1>
+            </div>
+            <div id="form1">
+                <label for="username">Username :</label>
+                <div>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </div>
+            </div>
+            <div id="form2">
+                <label for="password">Password : </label>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+            </div>
+            <div id="form3">
+                <label for="rpassword">Repeat Password : </label>
+                <div>
+                    <input type="password" name="rpassword" id="rpassword" placeholder="Repeat Password">
+                </div>
+            </div>
+            <div id="form4">
+                <input type="checkbox" name="showPassword" id="showPassword" onclick="showPasswordText()"> <label
+                    for="showPassword"> Show Password</label>
+            </div>
+            <div id="form5">
+                <label for="email">Email : </label>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="simple@simple.com">
+                </div>
+            </div>
+            <div id="form6">
+                <label for="address">Address : </label>
+                <div>
+                    <textarea name="address" id="address" rows="10" cols="35">
+                                </textarea>
+                </div>
+            </div>
+            <div id="form7">
+                <label for="numberofcopies">Number of Copies : </label>
+                <div>
+                    <select id="numberofcopies" name="Field106" class="field select medium" tabindex="11">
+                        <option value="First Choice">1</option>
+                        <option value="Second Choice">2</option>
+                        <option value="Third Choice">3</option>
+                        <option value="Fourth Choice">4</option>
+                        <option value="Fifth Choice">5</option>
+                    </select>
+                </div>
+            </div>
+            <div id="form8">
+                <label for="typeofgame">Type of Game : </label>
+                <div>
+                    <div>
+                        <input id="typeofgame" name="Field5" type="hidden" value="">
+                        <div>
+                            <input id="typeofgame1" name="typeofgame1" type="radio">
+                            <label class="choice" for="typeofgame1">Rainbow Seven Siege's PS4</label>
+                        </div>
+                        <div>
+                            <input id="typeofgame2" name="typeofgame2" type="radio">
+                            <label class="choice" for="typeofgame2">Rainbow Seven Siege's XBOX</label>
+                        </div>
+                        <div>
+                            <input id="typeofgame3" name="typeofgame3" type="radio">
+                            <label class="choice" for="typeofgame3">Rainbow Seven Siege's PC</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="form9">
+                <input type="checkbox" name="terms" id="terms"> <label for="terms"> Accept Terms and Service
+                    Agreement</label>
+            </div>
+            <div id="orderbtn">
+                <button id="btn1" type="button" onclick="validate()">Order</button>
+                <button id="btn2" type="button" onclick="resetForm()">Reset</button>
+            </div>
+
+        </form>
+    </div>
+    <footer>
+        <a href="http://www.instagram.com"><img class="footerImage" src="Assets/instagram.png" alt=""></a>
+        <a href="http://www.twitter.com"><img class="footerImage" src="Assets/twitter.png" alt=""></a>
+        <a href="http://www.facebook.com"><img class="footerImage" src="Assets/facebook_logos_PNG19757.png" alt=""></a>
+        <a href="http://www.reddit.com"><img class="footerImage" src="Assets/reddit.png" alt=""></a>
+        <a href="http://www.twitch.com"><img class="footerImage" src="Assets/Twitch.png" alt=""></a>
+        <br><br>Follow Us
+        <br><br>
+        <hr class="footerHr">
+        <br>Copyright &copy; 2020, Ubipost R7 Team Developer
+    </footer>
+</body>
+<script src="Js/scriptpreorder.js"></script>
+
+</html>

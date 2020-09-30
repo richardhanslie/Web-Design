@@ -1,0 +1,446 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #f1f1f1;
+}
+
+/* Header */
+header {
+	display: flex;
+    width: 100%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo-ubipost,.logo-r7s,.dropdown{
+    display: flex;
+}
+
+.logo-ubipost {
+    background-color: black;
+    flex: 0;
+    justify-content: flex-end;
+}
+
+.ubipost{
+    height: 10vh;
+    width: 10vh;
+}
+
+.logo-r7s {
+    background-color:black;
+    flex: 10;
+    justify-content: center;
+}
+
+.r7s{
+    height: 10vh;
+    width: 24vh;
+}
+
+.dropdown {
+    background-color: rgb(76, 82, 85);
+    flex: 0;
+}
+
+
+.photomenu{
+    height: 9.5vh;
+    width: 9.5vh;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropbtn:hover{
+    background-color: rgb(121, 129, 133);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    z-index: 10;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* End Header */
+
+.quarantineHeader{
+    display: flex;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'Trebuchet MS';
+    font-style:  italic;
+    color: #f1f1f1;
+    background-image: linear-gradient(black, rgb(46, 45, 45));
+}
+
+.quarantineHeader2{
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    padding: 50px;
+    font-family: 'Trebuchet MS';
+    font-size: xx-large;
+    font-style:  italic;
+    color: #f1f1f1;
+    background-image: linear-gradient(to bottom right, black, rgb(46, 45, 45));
+}
+
+.line{
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.line1{
+    border-width: 1px;
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: black;
+    border-style: solid;
+}
+
+.info{
+    width: 30vw;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 20px;
+    float: left;
+    color: #f1f1f1;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding: 2%;
+    background-color:rgba(0, 0, 0, 0.5);
+    transition: background-color 400ms ease-in-out;
+}
+
+main{
+    min-height: calc(100vh - 6vh);
+    background-image: radial-gradient(black, rgb(70, 70, 70), rgb(41, 41, 41));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+}
+
+.main2{
+    width: 100%;
+    height: 500px;
+    background-image: url(../Assets/alien.jpg);
+    background-blend-mode: lighten;
+    background-position: 50% 60%;
+    color: white;
+}
+
+.attackImg{
+    width: 100%;
+    height: 1000px;
+    background-image: url(../Assets/alien3.jpg);
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.attackInfo{
+    color: #f1f1f1;
+    position: relative;
+    top: 170px;
+    margin-left: 130px;
+    border: 1px solid white;
+    width: 28vw;
+    height: auto;
+    color: #f1f1f1;
+    font-size: 100%;
+    font-family: 'Verdana';
+    font-variant: small-caps;
+    padding: 3%;
+    background-color:rgba(0, 0, 0, 0.5);
+    transition: background-color 400ms ease-in-out;
+}
+
+.attackInfo2{
+    color: #f1f1f1;
+    position: relative;
+    top: 300px;
+    margin-left: 70%;
+    border: 1px solid white;
+    width: 28vw;
+    height: auto;
+    color: #f1f1f1;
+    font-size: 100%;
+    font-family: 'Verdana';
+    font-variant: small-caps;
+    padding: 2%;
+    background-color:rgba(0, 0, 0, 0.5);
+    transition: background-color 400ms ease-in-out;
+}
+
+.defenseInfo{
+    color: #f1f1f1;
+    position: relative;
+    top: 120px;
+    margin-left: 70%;
+    border: 1px solid white;
+    width: 28vw;
+    height: auto;
+    color: #f1f1f1;
+    font-size: 100%;
+    font-family: 'Verdana';
+    font-variant: small-caps;
+    padding: 3%;
+    background-color:rgba(0, 0, 0, 0.5);
+    transition: background-color 400ms ease-in-out;
+}
+
+.defenseInfo2{
+    color: #f1f1f1;
+    position: relative;
+    top: 350px;
+    margin-left: 130px;
+    border: 1px solid white;
+    width: 28vw;
+    height: auto;
+    color: #f1f1f1;
+    font-size: 100%;
+    font-family: 'Verdana';
+    font-variant: small-caps;
+    padding: 2%;
+    background-color:rgba(0, 0, 0, 0.5);
+    transition: background-color 400ms ease-in-out;
+}
+
+
+.defenseImg{
+    width: 100%;
+    height: 900px;
+    background-image: url(../Assets/alien2.jpg);
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.researchInfo{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    max-width: 850px;
+    border: 1px solid black;
+}
+
+img.researchInfo{
+    width: 50%;
+    height: auto;
+}
+
+.researchInfo2{
+    color: #f1f1f1;
+    position: relative;
+    bottom: 250px;
+    margin-left: 60%;
+    border: 1px solid white;
+    width: 28vw;
+    height: auto;
+    color: #f1f1f1;
+    font-size: 100%;
+    font-family: 'Verdana';
+    font-variant: small-caps;
+    padding: 2%;
+    background-color:rgba(0, 0, 0, 0.5);
+    transition: background-color 400ms ease-in-out;
+}
+
+
+.researchImg{
+    width: 100%;
+    height: auto;
+    background-image: url(../Assets/alien4.jpeg);
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+.attackInfo:hover, .attackInfo2:hover, .defenseInfo:hover, .defenseInfo2:hover, .researchInfo2:hover, .info:hover{
+    background-color:rgba(0, 0, 0, 0.9);
+}
+
+
+/* START IMAGE SLIDER*/
+#slideshow { 
+    float: left;
+    margin-left: 170px;
+    margin-top: 40px; 
+    position: relative; 
+    width: 40%;
+    height: 10%;
+    padding: 0% 0% 20% 0%;
+    box-sizing:border-box;
+}
+
+#slideshow > div { 
+    position: absolute; 
+}
+
+#slideshow > div > img {
+	width:100%;
+	height:100%;
+}
+
+#slideshow:hover i, #slideshow:hover .slider-dots{
+	opacity: 2;
+}
+
+.slidebtn {
+	z-index:99;
+	background:transparent;
+	outline:none;
+	border:none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	padding:0 10px 0 10px;
+}
+
+.slidebtn:active,
+.slidedtn:focus {
+  outline:none;
+}
+	
+.slidebtn i {
+	color:#FFF;
+	font-size:72px;
+	opacity: 0.2;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.slider-dots {
+	opacity: 0.2;
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+  position:absolute;
+  left:50%;
+  bottom:1%;
+  transform: translate(-50%, 0);
+  z-index:99;
+  -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.slider-dots li {
+  color: rgb(63, 56, 56);
+  display: inline;
+  font-size: 48px;
+  margin-right: 5px;
+  cursor:pointer;
+}
+
+.slider-dots li.active-dot {
+  color: #fff;
+}
+
+/*END IMAGE SLIDER*/
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+
+.footerImage{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footerHr{
+    border-width: 2px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* End Footer */
+
+@media screen and (max-width: 875px) {
+    #slideshow{
+      width: 40%;
+      height: 40%;
+      margin-left: 30%;
+    }
+    .info, .attackInfo, .attackInfo2, .defenseInfo, .defenseInfo2{
+        margin-top: 20px;
+        min-width: 75%;
+        height: auto;
+        max-height: 245px;
+        margin-left: 12%;
+        text-align: center;
+        float: left;
+        color: white;
+        font-size: 15px;
+        font-family: cursive;
+    }
+
+    .researchInfo2{
+        margin-top: 250px;
+        min-width: 85%;
+        height: auto;
+        margin-left: 7%;
+        text-align: center;
+        float: left;
+        color: white;
+        font-size: 15px;
+        font-family: cursive;
+    }
+
+    .researchInfo{
+        position: relative;
+        top: 0;
+        left: 25%;
+    }
+  }

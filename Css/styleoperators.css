@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+	display: flex;
+    width: 100%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo-ubipost,.logo-r7s,.dropdown{
+    display: flex;
+}
+
+.logo-ubipost {
+    background-color: black;
+    flex: 0;
+    justify-content: flex-end;
+}
+
+.ubipost{
+    height: 10vh;
+    width: 10vh;
+}
+
+.logo-r7s {
+    background-color:black;
+    flex: 10;
+    justify-content: center;
+}
+
+.r7s{
+    height: 10vh;
+    width: 24vh;
+}
+
+.dropdown {
+    background-color: black;
+    flex: 0;
+}
+
+
+.photomenu{
+    height: 10vh;
+    width: 10vh;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropbtn:hover{
+    background-color: rgb(121, 129, 133);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    z-index: 10;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* End Header */
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+
+.footerImage{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footerHr{
+    border-width: 2px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* End Footer */
+
+.opjudul{
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'Trebuchet MS';
+    font-style:  italic;
+    color: #f1f1f1;
+    background-color: black;
+}
+
+.item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    width: 200px;
+    height: 360px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: Verdana;
+    font-variant: small-caps;
+    transition: background 400ms ease-in-out;
+}
+
+.item:hover{
+    background: black;
+}
+
+.containeroperators {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;    
+    background-image: linear-gradient(rgb(49, 49, 49), rgb(66, 66, 66), black);
+}
+
+#opimage{
+    width: 100%;
+    height:90%;
+    border-radius: 10px;
+}
+
+.containertext{
+    position: relative;
+    font-size: 1.5em;
+    width: auto;
+    color: white;
+    text-align: center;
+}
+
+.opbadge{
+    position: absolute;
+}
+
+.imageopt{
+    width: 80px;
+    height: 80px;
+}

@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    min-zoom: 100%;
+}
+
+html{
+    background-color: #f1f1f1;
+}
+
+/* Header */
+header {
+	display: flex;
+    width: 100%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo-ubipost,.logo-r7s,.dropdown{
+    display: flex;
+}
+
+.logo-ubipost {
+    background-color: black;
+    flex: 0;
+    justify-content: flex-end;
+}
+
+.ubipost{
+    height: 10vh;
+    width: 10vh;
+}
+
+.logo-r7s {
+    background-color:black;
+    flex: 10;
+    justify-content: center;
+}
+
+.r7s{
+    height: 10vh;
+    width: 24vh;
+}
+
+.dropdown {
+    background-color: rgb(76, 82, 85);
+    flex: 0;
+}
+
+
+.photomenu{
+    height: 9.5vh;
+    width: 9.5vh;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropbtn:hover{
+    background-color: rgb(121, 129, 133);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    z-index: 10;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* End Header */
+
+main{
+    min-height: 100vh;
+    background-image: url(../Assets/maps/background.jpg);
+    background-position: 10%;
+    background-size: cover;
+}
+
+.headerMaps{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+    justify-content: center;
+    font-weight: 100;
+}
+
+.headerMaps2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    padding: 30px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.maps{
+    display: flex;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10% ;
+    float: left;
+}
+
+img.map{
+    width: 35%;
+    height: auto;
+    box-shadow: 0 0 rgba(88, 87, 87, 0.2);
+    transition: box-shadow 300ms ease-in-out;
+}
+
+img.map:hover{
+    box-shadow: 0 0 5px white;
+}
+
+.mapInfo{
+    width: 40%;
+    height: auto;
+    background-color:rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(88, 87, 87, 0.2);
+    color: #f1f1f1;
+    transition: background-color 500ms ease-in-out, border 500ms ease-in-out
+}
+
+.mapInfo:hover{
+    background-color:rgba(0, 0, 0, 0.8);
+    border-color: rgba(88, 87, 87, 0.8);
+}
+
+
+.headerMapsInfo{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-left: 5%;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+    font-weight: 100;
+}
+
+.line1{
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.line2{
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.subHeader1{
+    padding: 10px;
+    margin-left: 5%;
+    padding-left: 0;
+}
+
+.subHeader2{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.subHeader3{
+    padding: 10px;
+    padding-left: 0;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+
+.footerImage{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footerHr{
+    border-width: 2px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* End Footer */
+
+@media screen and (max-width: 1050px) {
+    img.map{
+        width: 55%;
+        height: auto;
+    }
+    .maps{
+        margin: 0;
+        width: 100%;
+    }
+
+    .headerMapsInfo{
+        font-size: 200%;
+        
+    }
+    .subHeader1{
+        font-size: 80%;  
+    }
+    .subHeader2{
+        font-size: 100%;  
+    }
+    .subHeader3{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    img.map{
+        width: 55%;
+        height: auto;
+    }
+    .headerMapsInfo{
+        font-size: 150%;
+        
+    }
+    .subHeader1{
+        font-size: 70%;  
+    }
+    .subHeader2{
+        font-size: 90%;  
+    }
+    .subHeader3{
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    img.map{
+        width: 50%;
+        height: auto;
+    }
+
+    .headerMaps{
+        font-size: 30px;
+    }
+
+    .headerMaps2{
+        font-size: 10px;
+    }
+
+    .headerMapsInfo{
+        font-size: 100%;
+        
+    }
+    .subHeader1{
+        font-size: 60%;  
+    }
+    .subHeader2{
+        font-size: 70%;  
+    }
+    .subHeader3{
+        font-size: 50%;
+    }
+
+    .maps{
+        margin: 0;
+        width: 100%;
+    }
+
+    .mapInfo{
+        width: 100%;
+    }
+}
